@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+    <style>
+        .first {
+            color: red;
+            text-align: center;
+        }
+
+        div {
+            border: 1px solid red;
+            margin-left: 100px;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        p.dotted {
+            border-style: dotted;
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+
+        p.double {
+            border-style: double;
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+
+        p.none {
+            border-style: none;
+        }
+
+        p.hidden {
+            border-style: hidden;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+
+        p.ex1 {
+            margin-left: inherit;
+        }
+
+        .second {
+            width: 300px;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        .third {
+            max-width: 500px;
+            height: 100px;
+            background-color: powderblue;
+        }
+
+        .fourth {
+            width: 320px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+        }
+
+        a:link {
+            background-color: yellow;
+        }
+
+        a:visited {
+            background-color: cyan;
+        }
+
+        a:hover {
+            background-color: lightgreen;
+        }
+
+        a:active {
+            background-color: hotpink;
+        }
+
+        ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th {
+  height: 70px;
+}
+
+#rcorners1 {
+  border-radius: 50px / 15px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#rcorners2 {
+  border-radius: 15px / 50px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#rcorners3 {
+  border-radius: 50%;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Самостійна робота 2</h1>
+
+    <h2>Параграф 1.1</h2>
+    <p class="first">Це параграф.</p>
+
+    <h2>Параграф 1.2</h2>
+    <p class="center large">Цей параграф реферер для двох класів.</p>
+
+    <h2>Параграф 1.3</h2>
+    <h4 style="background-color:DodgerBlue;">Hello World</h4>
+    <p style="background-color:Tomato;">Lorem ipsum...</p>
+    <h1 style="color:Tomato;">Hello World</h1>
+    <p style="color:DodgerBlue;">Lorem ipsum...</p>
+    <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+    <h2>Параграф 1.4</h2>
+    <div>Hello my name is Artem</div>
+
+    <h2>Параграф 1.5</h2>
+    <p class="dotted">Точечная граница.</p>
+    <p class="dashed">Пунктирная граница.</p>
+    <p class="solid">Сплошная граница.</p>
+    <p class="double">Двойная граница.</p>
+    <p class="groove">Рифлёная граница.</p>
+    <p class="ridge">Ребристая граница.</p>
+    <p class="inset">Вставная граница.</p>
+    <p class="outset">Выпуклая граница.</p>
+    <p class="none">Нет границы.</p>
+    <p class="hidden">Скрытая граница.</p>
+    <p class="mix">Смешанная граница.</p>
+
+    <h2>Параграф 1.6</h2>
+    <h2>Использование наследуемого значения</h2>
+    <p>Пусть левое поле наследуется от родительского элемента:</p>
+    <div>
+        <p class="ex1">Этот параграф имеет унаследованное левое поле (от элемента div).</p>
+    </div>
+
+    <h2>Параграф 1.8</h2>
+    <div class="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at natus mollitia deserunt
+        quos consectetur ducimus aspernatur ab pariatur ut ex architecto veniam delectus nobis, explicabo laboriosam
+        repellat. Ipsa, aspernatur?</div>
+
+    <h2>Параграф 1.9</h2>
+    <div class="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam quia doloribus
+        necessitatibus quo maxime odio molestias dolore! Repudiandae laboriosam velit saepe quas quia nam quis odio
+        libero recusandae sapiente?</div>
+
+    <h2>Параграф 1.10</h2>
+    <div class="fourth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit velit optio ea possimus ullam
+        aut
+        id quam, est voluptas laudantium, molestias debitis, totam perspiciatis eligendi corrupti impedit nemo at
+        recusandae.</div>
+
+    <h2>Параграф 1.11</h2>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i>
+
+    <h2>Параграф 1.12</h2>
+    <span style="cursor: auto">auto</span><br>
+    <span style="cursor: crosshair">crosshair</span><br>
+    <span style="cursor: default">default</span><br>
+    <span style="cursor: e-resize">e-resize</span><br>
+    <span style="cursor: help">help</span><br>
+    <span style="cursor: move">move</span><br>
+    <span style="cursor: n-resize">n-resize</span><br>
+    <span style="cursor: ne-resize">ne-resize</span><br>
+    <span style="cursor: nw-resize">nw-resize</span><br>
+    <span style="cursor: pointer">pointer</span><br>
+    <span style="cursor: progress">progress</span><br>
+    <span style="cursor: s-resize">s-resize</span><br>
+    <span style="cursor: se-resize">se-resize</span><br>
+    <span style="cursor: sw-resize">sw-resize</span><br>
+    <span style="cursor: text">text</span><br>
+    <span style="cursor: w-resize">w-resize</span><br>
+    <span style="cursor: wait">wait</span>
+    <p><b><a href="index.html" target="_blank">Это ссылка</a></b></p>
+    <p><b>Примечание:</b> a:hover ДОЛЖЕН стоять после a:link и a:visited в определении CSS, чтобы быть эффективным.</p>
+    <p><b>Примечание:</b> a:active ДОЛЖЕН стоять после a:hover в определении CSS, чтобы быть эффективным.</p>
+
+    <h2>Параграф 1.13</h2>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+<h2>Параграф 1.14</h2>
+
+<table>
+    <tr>
+      <th>Имя</th>
+      <th>Фамилия</th>
+      <th>Заработок</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+  </table>
+
+  <div style="overflow-x:auto;">
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>Johnson</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Параграф 2.1</h2>
+  <p>Еліптична межа - border-radius: 50px / 15px:</p>
+  <p id="rcorners1"></p>
+  
+  <p>Еліптична межа - border-radius: 15px / 50px:</p>
+  <p id="rcorners2"></p>
+  
+  <p>Еліптична межа - border-radius: 50%:</p>
+  <p id="rcorners3"></p>
+
+<a href="index2.html">second page</a>
+
+</body>
+
+</html>
